@@ -77,7 +77,14 @@
     <button onclick="loadtoolurlgen()">URL Gen</button>
     <button onclick="loadtoolchromeurls()">URLS</button>
     <button onclick="loadtoolsh1mmer()">Sh1mmer</button>
+    <button onclick="loadtoolcrasher()">Crasher</button>
     <button onclick="openFullscreen()">Terbium</button>
+    <div class="popuptool" id="crasher">
+        <br>
+        <button onclick="closetoolcrasher()">Close</button>
+        <h1>Chrome Crasher</h1>
+        <iframe src="./theyuh.html" frameborder="0"></iframe>
+    </div>
     <div class="popuptool" id="sh1mmer">
         <br>
         <button onclick="closetoolsh1mmer()">Close</button>
@@ -122,6 +129,7 @@
         document.getElementById('chromeurls').style.display = 'none';
         document.getElementById('sh1mmer').style.display = 'none';
         document.getElementById('fullscreen1').style.display = 'none';
+        document.getElementById('crasher').style.display = 'none';
         function loadtoolextprint3r() {
         document.getElementById('extprint3r').style.display = 'block';
         }
@@ -157,6 +165,12 @@
         }
         function closetoolsh1mmer() {
         document.getElementById('sh1mmer').style.display = 'none';
+        }
+        function loadtoolcrasher() {
+        document.getElementById('crasher').style.display = 'block';
+        }
+        function closetoolcrasher() {
+        document.getElementById('crasher').style.display = 'none';
         }
         var elem = document.getElementById("fullscreen1");
         function openFullscreen() {
